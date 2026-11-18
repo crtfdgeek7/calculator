@@ -41,7 +41,25 @@ function show4() {
     document.getElementById('rhombus-d2').value = ''
 }
 
+function show5() {
+    let base1 = document.getElementById('trap-b1').value
+    let base2 = document.getElementById('trap-b2').value
+    let height = document.getElementById('trap-height').value
+    let areaOfTrapezium = 0.5 * (base1 + base2) * height
+    displayTrapezium.innerHTML = `<p>Area of trapezium = ${areaOfTrapezium.toFixed(2)}cm²</p>`
+    document.getElementById('trap-b1').value = ''
+    document.getElementById('trap-b2').value = ''
+    document.getElementById('trap-height').value = ''
+}
 
+function show6() {
+    let base = document.getElementById('para-base').value
+    let height = document.getElementById('para-height').value
+    let areaOfParallelogram = base * height
+    displayParallelogram.innerHTML = `<p>Area of parallelogram = ${areaOfParallelogram.toFixed(2)}cm²</p>`
+    document.getElementById('para-base').value = ''
+    document.getElementById('para-height').value = ''
+}
 
 function show7() {
     let weight = Number(document.getElementById('bmi-weight').value)
